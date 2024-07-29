@@ -11,7 +11,7 @@ If you have any questions or need help, feel free to [open an issue.](https://gi
 
 ### Question Bank Basic Information
 
-```json
+```
 {
   name: 'My Awesome Question Bank',
   description: "This question bank is awesome. Spaced Study is awesome.",
@@ -24,7 +24,7 @@ If you have any questions or need help, feel free to [open an issue.](https://gi
 Create a `questions` array in the json file.
 
 Each question object within `questions` should look something like this:
-```json
+```
 {
   category: 'Unit 1',
   prompt: '<p>Which choice most logically completes the text?</p>',
@@ -51,7 +51,7 @@ To generate `embedding`, I suggest you use OpenAI's `text-embedding-3-small`. Ho
 
 ### Question Bank Category Weighing
 This is useful when you want to balance an imbalanced question set according to a set of weights. If a test is comprised with 20% of one unit and other weights for other units, then it makes sense to define it here.
-```json
+```
 {
   ...
   categoryWeights: {
@@ -66,7 +66,7 @@ If you don't want to use this feature, make sure to set `categoryWeights: null`
 
 ### Question Bank Timing Presets
 Many tests have a certain amount of time allocated for each question. Spaced Study has a timer built-in so students can ensure they are answering questions at the appropriate pace.
-```json
+```
 {
   ...
   timingPresets: [{
